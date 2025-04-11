@@ -1,13 +1,10 @@
 #include "BoardConfig.h"
 #include "WiFiConfig.h"
 
-const char *ssid = WIFI_SSID;
-const char *password = WIFI_PASSWORD;
-
 void WiFiConfig_Setup()
 {
     WiFi.mode(WIFI_STA);
-    WiFi.begin(ssid, password);
+    WiFi.begin(WiFiConfig_SSID, WiFiConfig_Password);
     while (WiFi.status() != WL_CONNECTED)
     {
         delay(1000);
@@ -17,7 +14,8 @@ void WiFiConfig_Setup()
     }
 
 #ifdef WIFI_MODULE
-    Serial.println("Connected to WiFi network " + String(ssid));
-    Serial.println(WiFi.localIP());
+    Serial.println("Connected to WiFi network " + String(WiFiConfig_SSID));
+    Serial.println("Device Local IP: " + WiFi.localIP());
+    Serial.println("------------------------");
 #endif
 }

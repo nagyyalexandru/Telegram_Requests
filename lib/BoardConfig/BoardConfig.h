@@ -1,5 +1,5 @@
-#ifndef BoardConfig_h
-#define BoardConfig_h
+#ifndef BOARDCONFIG_h
+#define BOARDCONFIG_h
 
 /**
  * Placeholder for GPIOs mapping
@@ -16,4 +16,4 @@
  */
 void BoardConfig_Setup();
 
-#endif
+#endif // BOARDCONFIG_h
