@@ -8,7 +8,7 @@ void TemperatureSensor_Setup()
 
 void TemperatureSensor_Loop()
 {
-#ifdef DEBUG_FLAG_ESP32_TELEGRAM_REQUEST
+#ifdef DEBUG_TEMPERATURE_MODULE
     Serial.println(Temperature_DHT_Sensor.readTemperature());
 #endif
 }
