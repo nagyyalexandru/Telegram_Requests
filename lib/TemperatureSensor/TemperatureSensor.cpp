@@ -32,3 +32,8 @@ void TemperatureSensor_Loop()
 /* Add other non-blocking code here if necessary */
 #endif
 }
+
+float TemperatureSensor_GetCelsiusVal()
+{
+    return Temperature_DHT_Sensor.readTemperature();
+}
