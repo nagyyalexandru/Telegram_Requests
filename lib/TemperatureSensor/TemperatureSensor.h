@@ -20,4 +20,9 @@ void TemperatureSensor_Setup();
  */
 void TemperatureSensor_Loop();
 
+/**
+ * Function to read Celsius val. from the sensor
+ */
+float TemperatureSensor_GetCelsiusVal();
+
 #endif // TEMPERATURESENSOR_h
