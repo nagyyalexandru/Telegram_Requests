@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include "BoardConfig.h"
 #include "TemperatureSensor.h"
-#define DEBUG_FLAG_ESP32_TELEGRAM_REQUEST
 
 void setup()
 {
