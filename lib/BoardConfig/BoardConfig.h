@@ -9,7 +9,7 @@
 
 /* Flags to toggle Logging into console (serial-monitor)*/
 // #define DEBUG_TEMPERATURE_MODULE
-#define WIFI_MODULE
+// #define DEBUG_WIFI_MODULE
 
 /**
  * Internal Setup function for general configuration of board

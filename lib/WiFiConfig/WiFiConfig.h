@@ -1,9 +1,6 @@
 #ifndef WIFI_CONFIG_H
 #define WIFI_CONFIG_H
 
-const char *WiFiConfig_SSID = WIFI_SSID;
-const char *WiFiConfig_Password = WIFI_PASSWORD;
-
 #include <WiFi.h>
 
 /**
