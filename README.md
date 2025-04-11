@@ -17,6 +17,7 @@ This project is designed to read temperature and humidity data from a **DHT11 se
 - **Wi-Fi**: The ESP32 connects to Wi-Fi to communicate with the Telegram API.
 
 ## Adding the credidentials of WiFi network
+```ini
 In "platformio.ini", you have to add your WiFi credidentials:
 ; Define Wi-Fi credentials as build flags
 build_flags = 
