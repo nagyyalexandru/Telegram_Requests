@@ -2,8 +2,8 @@
 #include "Arduino.h"
 #include "BoardConfig.h"
 
-#ifndef TemperatureSensor_h
-#define TemperatureSensor_h
+#ifndef TEMPERATURESENSOR_h
+#define TEMPERATURESENSOR_h
 
 /**
  * Object instance for DHT11 Sensor
@@ -20,4 +20,4 @@ void TemperatureSensor_Setup();
  */
 void TemperatureSensor_Loop();
 
-#endif
+#endif // TEMPERATURESENSOR_h
