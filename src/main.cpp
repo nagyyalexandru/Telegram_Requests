@@ -1,18 +1,15 @@
 #include <Arduino.h>
+#include "BoardConfig.h"
+#include "TemperatureSensor.h"
+#define DEBUG_FLAG_ESP32_TELEGRAM_REQUEST
 
-// put function declarations here:
-int myFunction(int, int);
-
-void setup() {
-  // put your setup code here, to run once:
-  int result = myFunction(2, 3);
+void setup()
+{
+  BoardConfig_Setup();
+  TemperatureSensor_Setup();
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
-}
-
-// put function definitions here:
-int myFunction(int x, int y) {
-  return x + y;
+void loop()
+{
+  TemperatureSensor_Loop();
 }
